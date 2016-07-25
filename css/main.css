@@ -370,12 +370,12 @@ header {
 
 
 #be-the-first {
-  background: url(../img/be-the-first-bg.jpg) #231f20 no-repeat center center fixed;
+    background: #fcecfc; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #fcecfc 0%, #fd89d7 48%, #fd89d7 73%, #ff7cd8 100%);
+    background: -webkit-linear-gradient(-45deg, #fcecfc 0%,#fd89d7 48%,#fd89d7 73%,#ff7cd8 100%);
+    background: linear-gradient(135deg, #fcecfc 0%,#fd89d7 48%,#fd89d7 73%,#ff7cd8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=1 );
   min-height: 300px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 hr.line {
