@@ -672,5 +672,15 @@ footer {
 
 
 #d1 {
-  background: black;
+  background: #f45;
+}
+
+.centered {
+  text-align: center;
+}
+
+.alina-photo {
+  border: 20px solid white;
+  max-width: 600px;
+  display: inline-block;
 }
