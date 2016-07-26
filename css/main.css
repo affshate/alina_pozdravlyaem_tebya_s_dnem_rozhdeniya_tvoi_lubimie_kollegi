@@ -226,12 +226,6 @@ a:hover, a:focus {
 	background: #6d3f96;
 }
 
-body {
-    position: relative;
-}
-
-
-
 /* ==========================================================================
    Nav Styles
    ========================================================================== */
@@ -249,6 +243,23 @@ body {
     top: -300px;
     left: -300px;
     z-index: 9999;
+}
+
+.epta {
+    max-width: 200px; position: absolute; right: 0;
+}
+
+.epta:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s ;
 }
 
 .navbar {
