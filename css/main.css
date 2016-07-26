@@ -760,6 +760,41 @@ footer {
 
 }
 
+#sfsdfsd {
+  position: relative;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.kek-base, .kek-omg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.kek-omg {
+  transform: scale(1.05);
+}
+
+.kek-omg-1 {
+  position: absolute;
+  top: -30px;
+  left: 30%;
+}
+
+.kek-omg-2 {
+  position: absolute;
+  bottom: 100px;
+  left: 7%;
+}
+
+.kek-omg-3 {
+  position: absolute;
+  top: 50px;
+  right: 7%;
+  transform: rotate(90deg)
+}
 
 
 #d1 {
