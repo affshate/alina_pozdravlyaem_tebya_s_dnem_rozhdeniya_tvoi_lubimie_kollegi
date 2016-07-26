@@ -262,6 +262,70 @@ a:hover, a:focus {
     transition: 2s ;
 }
 
+@keyframes move {
+    0% {
+        opacity: 1
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0
+    }
+    75% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes movehe {
+    0% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    100% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+}
+
+.cat1 {
+    position: absolute;
+    top: 109px;
+    left: 354px;
+    max-width: 192px;
+
+}
+
+.js-cat1 {
+    animation: movehe infinite 4s linear;
+}
+
+.js-cat2 {
+    animation: move infinite 4s linear;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+
 .navbar {
     border: 0px solid rgba(0, 0, 0, 0);
     background: #70cbce;
