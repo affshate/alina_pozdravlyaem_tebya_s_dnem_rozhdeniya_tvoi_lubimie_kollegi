@@ -120,6 +120,9 @@
       <img weight="1" src="img/diman/1.png" class="kek-omg-1 layer-omg"/>
       <img weight="1" src="img/diman/2.png" class="kek-omg-2 layer-omg"/>
       <img weight="1" src="img/diman/2.png" class="kek-omg-3 layer-omg"/>
+      <img weight="1" src="img/diman/4.png" class="kek-omg-4 layer-omg"/>
+      <img weight="1" src="img/diman/6.png" class="kek-omg-6 layer-omg"/>
+      <img weight="1" src="img/diman/6.png" class="kek-omg-7 layer-omg"/>
 
 
     </section>
@@ -376,6 +379,8 @@
 
 </section>
 
+<img src="img/cur.png" id="cur" class="cursor"/>
+
     <!-- Javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -385,7 +390,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     VK.Widgets.Comments("vk_comments", {
       redesign: 1,
       limit: 100,
@@ -394,14 +399,20 @@
       autoPublish: 0,
       pageUrl: 'https://affshate.github.io/alina_pozdravlyaem_tebya_s_dnem_rozhdeniya_tvoi_lubimie_kollegi'
     });
-    </script>
+    </script> -->
 
     <script>
+      var cur = $('#cur');
+      console.log(cur);
         $(window).scroll(function(){
             $('.zalupa-tv').css('top', $(window).scrollTop());
             $('.zalupa-tv').css('right', $(window).scrollTop());
             $('.zalupa-tv2').css('top', $(window).scrollTop());
             $('.zalupa-tv2').css('left', $(window).scrollTop());
+        });
+
+        $(window).on('mousemove', function(e) {
+          cur.css({'transform': 'translate3d('+e.clientX+'px, '+e.clientY+'px, 0)'});
         });
 
     </script>
