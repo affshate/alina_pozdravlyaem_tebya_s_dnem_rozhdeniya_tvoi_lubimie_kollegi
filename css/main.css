@@ -864,7 +864,7 @@ footer {
 .nyan {
   position: absolute;
   top: 400px;
-  right: 0;
+  right: -200px;
   transform: rotateY(180deg);
   transform-origin: 50% 50%;
   animation: 1s nyan-anim linear infinite;
