@@ -226,6 +226,16 @@ a:hover, a:focus {
 	background: #6d3f96;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+#dfgdfgdg img {
+    max-height: 600px;
+    display: block;
+    margin: auto;
+}
+
 /* ==========================================================================
    Nav Styles
    ========================================================================== */
@@ -236,6 +246,10 @@ a:hover, a:focus {
     top: -300px;
     right: -300px;
     z-index: 9999;
+}
+
+img {
+    max-width: 100%;
 }
 
 .zalupa-tv2 {
