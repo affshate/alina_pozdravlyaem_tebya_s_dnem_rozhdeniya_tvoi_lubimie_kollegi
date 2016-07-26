@@ -765,6 +765,7 @@ footer {
 #d1 {
   background: #f45;
   position: relative;
+  overflow: hidden;
 }
 
 .centered {
