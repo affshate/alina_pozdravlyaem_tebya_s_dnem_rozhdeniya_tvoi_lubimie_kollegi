@@ -33,6 +33,9 @@
 
 <body>
 
+<img class="zalupa-tv" src="img/zzz.gif" alt=""/>
+<img class="zalupa-tv2" src="img/zzz.gif" alt=""/>
+
     <header>
       <div class="container">
 
@@ -283,6 +286,17 @@
       autoPublish: 0,
       pageUrl: 'https://affshate.github.io/alina_pozdravlyaem_tebya_s_dnem_rozhdeniya_tvoi_lubimie_kollegi'
     });
+    </script>
+
+    <script>
+        $(window).scroll(function(){
+            $('.zalupa-tv').css('top', $(window).scrollTop());
+            $('.zalupa-tv').css('right', $(window).scrollTop());
+            $('.zalupa-tv2').css('top', $(window).scrollTop());
+            $('.zalupa-tv2').css('left', $(window).scrollTop());
+            console.log($(window).scrollTop());
+        });
+
     </script>
 
     </body>
