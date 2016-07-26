@@ -793,7 +793,37 @@ footer {
   position: absolute;
   top: 50px;
   right: 7%;
-  transform: rotate(90deg)
+  transform: rotate(90deg);
+}
+
+.kek-omg-4 {
+  position: absolute;
+  top: 50px;
+  left: 5%;
+}
+
+.kek-omg-6 {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.kek-omg-6 {
+  position: absolute;
+  left: 3%;
+  bottom: 50%;
+  transform: rotate(190deg);
+}
+
+.cursor {
+  width: 50px;
+  position: fixed;
+  top: 0;
+  left: -50px;
+}
+
+* {
+  cursor: none;
 }
 
 
