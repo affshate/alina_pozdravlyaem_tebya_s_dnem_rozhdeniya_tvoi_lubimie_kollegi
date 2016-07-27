@@ -778,6 +778,8 @@ footer {
   position: relative;
   overflow: hidden;
   pointer-events: none;
+  background: #C79F00;
+  min-height: 100vh;
 }
 
 .kek-base, .kek-omg {
@@ -828,6 +830,62 @@ footer {
   bottom: 50%;
   transform: rotate(190deg);
 }
+
+.kek-omg-8 {
+  position: absolute;
+  left: 30%;
+  bottom: 30%;
+}
+
+.kek-omg-9 {
+  position: absolute;
+  left: 35%;
+  top: 18%;
+}
+
+.kek-omg-10 {
+  position: absolute;
+  right: 35%;
+  top: 18%;
+}
+
+.kek-omg-11 {
+  position: absolute;
+  left: 5%;
+  bottom: 2%;
+}
+
+.kek-omg-12 {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+}
+
+.kek-omg-13 {
+  position: absolute;
+  right: 5%;
+  top: 24%;
+}
+
+.kek-omg-14 {
+  position: absolute;
+  right: 5%;
+  top: 28%;
+}
+
+.kek-omg-15 {
+  position: absolute;
+  right: 5%;
+  top: 32%;
+}
+
+.kek-omg-16 {
+  position: absolute;
+  right: 5%;
+  top: 36%;
+}
+
+
 
 .cursor {
   width: 50px;

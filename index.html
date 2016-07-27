@@ -112,18 +112,26 @@
         </div>
     </section>
 
-    <section id="sfsdfsd">
+    <section id="sfsdfsd" class="pad-xl">
 
-      <img style="width:100%" src="img/kek.jpg" alt=""/>
       <img src="img/diman/5.png" class="kek-base"/>
-      <img weight="1" src="img/diman/5.png" class="kek-omg layer-omg"/>
-      <img weight="1" src="img/diman/1.png" class="kek-omg-1 layer-omg"/>
-      <img weight="1" src="img/diman/2.png" class="kek-omg-2 layer-omg"/>
-      <img weight="1" src="img/diman/2.png" class="kek-omg-3 layer-omg"/>
-      <img weight="1" src="img/diman/4.png" class="kek-omg-4 layer-omg"/>
-      <img weight="1" src="img/diman/6.png" class="kek-omg-6 layer-omg"/>
-      <img weight="1" src="img/diman/6.png" class="kek-omg-7 layer-omg"/>
-
+      <img weight="0.1" src="img/diman/5.png" class="kek-omg layer-omg"/>
+      <img weight="0.2" src="img/diman/2.png" class="kek-omg-2 layer-omg"/>
+      <img weight="0.2" src="img/diman/2.png" class="kek-omg-3 layer-omg"/>
+      <img weight="0.3" src="img/diman/4.png" class="kek-omg-4 layer-omg"/>
+      <img weight="0.4" src="img/diman/6.png" class="kek-omg-6 layer-omg"/>
+      <img weight="0.45" src="img/diman/6.png" class="kek-omg-7 layer-omg"/>
+      <img weight="0.55" src="img/diman/8.png" class="kek-omg-8 layer-omg"/>
+      <img weight="0.5" src="img/diman/9.png" class="kek-omg-9 layer-omg"/>
+      <img weight="0.6" src="img/diman/9.png" class="kek-omg-10 layer-omg"/>
+      <img weight="0.7" src="img/diman/11.png" class="kek-omg-11 layer-omg"/>
+      <img weight="0.8" src="img/diman/10.png" class="kek-omg-12 layer-omg"/>
+      <img weight="0.85" src="img/diman/10.png" class="kek-omg-13 layer-omg"/>
+      <img weight="0.5" src="img/diman/10.png" class="kek-omg-14 layer-omg"/>
+      <img weight="0.4" src="img/diman/10.png" class="kek-omg-15 layer-omg"/>
+      <img weight="0.2" src="img/diman/10.png" class="kek-omg-16 layer-omg"/>
+      <img weight="0" src="img/diman/1.png" class="kek-omg-1 layer-omg"/>
+      <img weight="0" src="img/diman/1.png" class="kek-omg-1 layer-omg"/>
 
     </section>
 
@@ -403,17 +411,44 @@
 
     <script>
       var cur = $('#cur');
-      console.log(cur);
-        $(window).scroll(function(){
-            $('.zalupa-tv').css('top', $(window).scrollTop());
-            $('.zalupa-tv').css('right', $(window).scrollTop());
-            $('.zalupa-tv2').css('top', $(window).scrollTop());
-            $('.zalupa-tv2').css('left', $(window).scrollTop());
-        });
+      var omgs = $('.layer-omg');
 
-        $(window).on('mousemove', function(e) {
-          cur.css({'transform': 'translate3d('+e.clientX+'px, '+e.clientY+'px, 0)'});
-        });
+
+
+      // omgs.forEach(function(item) {
+      //   console.log($(item).attr('weight'));
+        // $(window).on('mousemove', function(e) {
+        //   cur.css({'transform': 'translate3d('+e.clientX+'px, '+e.clientY+'px, 0)'});
+        // });
+      // });
+
+      $(window).scroll(function(){
+          $('.zalupa-tv').css('top', $(window).scrollTop());
+          $('.zalupa-tv').css('right', $(window).scrollTop());
+          $('.zalupa-tv2').css('top', $(window).scrollTop());
+          $('.zalupa-tv2').css('left', $(window).scrollTop());
+      });
+
+      $(window).on('mousemove', function(e) {
+        var h = $(window).height();
+        var w = $(window).width();
+        var deltaX = e.clientX - w / 2;
+        var deltaY = e.clientY - h / 2;
+        var weight;
+        var item;
+        cur.css({'transform': 'translate3d('+e.clientX+'px, '+e.clientY+'px, 0)'});
+
+        for(var i=0; i< omgs.length; i++) {
+          // console.log($(omgs[i]).attr('weight'));
+          // (window).on('mousemove', function(e) {
+            // console.log(e);
+            // var deltaX = e.clientX;
+            item = $(omgs[i]);
+            weight = item.attr('weight');
+            item.css({'transform': 'translate3d('+ deltaX * weight +'px, '+ deltaY * weight +'px, 0)'});
+          // });
+        }
+      });
 
     </script>
 
